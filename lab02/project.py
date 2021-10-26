@@ -162,10 +162,12 @@ assert list_.head == None
 list_.push(1)
 list_.push(0)
 assert str(list_) == '0 -> 1'
+
 # testing if append works
 list_.append(9)
 list_.append(10)
 assert str(list_) == '0 -> 1 -> 9 -> 10'
+
 # testing if insert works
 middle_node = list_.node(at=1)
 list_.insert(5, after=middle_node)
