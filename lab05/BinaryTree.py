@@ -59,7 +59,7 @@ class BinaryNode:
     def show(self, level = 0):
         if self.right_child != None:
             self.right_child.show(level + 1)
-        print(' ' * 5 * level,self.value)
+        print(' ' * 5 * level + "->",self.value)
         if self.left_child != None:
             self.left_child.show(level + 1)
 
